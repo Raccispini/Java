@@ -1,0 +1,18 @@
+package prova;
+
+public class Interessi {
+	public static void main(String[] args) {
+		double capitale = 100000;
+		double tasso = 0.05;
+		double interesse =0;
+		int n= 10;
+		
+		//calcola l interesse maturato
+		for (int i = 0; i < n; i++) {
+			System.out.println("Anno "+(i+1));
+			interesse = capitale*tasso;
+			capitale = capitale + interesse;
+			System.out.println("Capitale maturato : "+ capitale);
+		}
+	}
+}
